@@ -158,7 +158,7 @@ export default createStore({
         } else {
           commit('SET_USER', user)
 
-          if (router.isReady() && router.currentRoute.value.path === '/login') {
+          if (router.currentRoute.value.path === '/login') {
             router.push('/')
           }
         }
