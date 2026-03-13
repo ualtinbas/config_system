@@ -8,7 +8,9 @@ import cors from 'cors'
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://codeway-config-website.onrender.com'
+}))
 
 const validateFirebaseToken = async (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization
