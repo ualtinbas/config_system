@@ -1,4 +1,4 @@
-# codeway_config_system
+# config_system
 
 ## Project setup
 ```
